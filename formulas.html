@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas e Tabela da Lei de Ohm</title>
+    <link rel="stylesheet" href="css2/formulas.css">
+</head>
+
+<body>
+    <header>Fórmulas e Tabela da Lei de Ohm</header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="formulas.html">Fórmulas e Tabela</a>
+    </nav>
+
+    <section>
+        <h2>Fórmulas Detalhadas</h2>
+        <p>A Lei de Ohm descreve a relação entre a tensão (V), a corrente elétrica (I) e a resistência elétrica (R). Ela
+            é expressa pelas seguintes fórmulas:</p>
+
+        <ul>
+            <li><strong>V = I ⋅ R</strong> — A tensão (V) é igual à corrente (I) multiplicada pela resistência (R).</li>
+            <li><strong>I = V / R</strong> — A corrente (I) é igual à tensão (V) dividida pela resistência (R).</li>
+            <li><strong>R = V / I</strong> — A resistência (R) é igual à tensão (V) dividida pela corrente (I).</li>
+        </ul>
+
+        <h3>Explicação Detalhada das Fórmulas</h3>
+
+        <div class="explicacao">
+            <h4>1. Fórmula da Tensão: <strong>V = I ⋅ R</strong></h4>
+            <p>A fórmula <strong>V = I ⋅ R</strong> é a base da Lei de Ohm. Ela nos diz que a tensão (V) é o produto da
+                corrente elétrica (I) e da resistência elétrica (R). Em outras palavras, a tensão é a "força" que
+                empurra os elétrons através de um condutor. Quanto maior a resistência, maior será a tensão necessária
+                para gerar a mesma corrente.</p>
+
+            <div class="exemplo">
+                <h4>Exemplo:</h4>
+                <p>Em um circuito com uma resistência de 10Ω e uma corrente de 2A, a tensão necessária será:</p>
+                <p><strong>V = 2A × 10Ω = 20V</strong></p>
+                <p>Portanto, a tensão necessária para esse circuito será de 20 volts.</p>
+            </div>
+        </div>
+
+        <div class="explicacao">
+            <h4>2. Fórmula da Corrente: <strong>I = V / R</strong></h4>
+            <p>Esta fórmula é usada quando queremos determinar a quantidade de corrente elétrica que passa por um
+                circuito, dado um valor de tensão e resistência. Quanto maior a resistência em um circuito, menor será a
+                corrente para uma tensão constante.</p>
+
+            <div class="exemplo">
+                <h4>Exemplo:</h4>
+                <p>Em um circuito com uma tensão de 20V e uma resistência de 5Ω, a corrente será:</p>
+                <p><strong>I = 20V / 5Ω = 4A</strong></p>
+                <p>Ou seja, a corrente que fluirá será de 4 amperes.</p>
+            </div>
+        </div>
+
+        <div class="explicacao">
+            <h4>3. Fórmula da Resistência: <strong>R = V / I</strong></h4>
+            <p>A fórmula <strong>R = V / I</strong> é usada para calcular a resistência de um circuito. Quando
+                conhecemos a tensão e a corrente em um circuito, podemos determinar a resistência necessária para que o
+                circuito funcione corretamente.</p>
+
+            <div class="exemplo">
+                <h4>Exemplo:</h4>
+                <p>Se tivermos uma tensão de 10V e uma corrente de 2A, podemos calcular a resistência da seguinte forma:
+                </p>
+                <p><strong>R = 10V / 2A = 5Ω</strong></p>
+                <p>A resistência do circuito será de 5 ohms.</p>
+            </div>
+        </div>
+
+        <h3>Tabela de Valores</h3>
+        <p>Na tabela abaixo, mostramos alguns exemplos de como as grandezas se relacionam entre si em um circuito
+            simples:</p>
+        <table>
+            <tr>
+                <th>Tensão (V)</th>
+                <th>Corrente (I)</th>
+                <th>Resistência (R)</th>
+            </tr>
+            <tr>
+                <td>10V</td>
+                <td>2A</td>
+                <td>5Ω</td>
+            </tr>
+            <tr>
+                <td>20V</td>
+                <td>4A</td>
+                <td>5Ω</td>
+            </tr>
+            <tr>
+                <td>30V</td>
+                <td>3A</td>
+                <td>10Ω</td>
+            </tr>
+            <tr>
+                <td>40V</td>
+                <td>8A</td>
+                <td>5Ω</td>
+            </tr>
+        </table>
+
+        <h3>Simulação Visual da Lei de Ohm</h3>
+        <p>Altere os valores de tensão e corrente para observar como eles afetam a resistência no circuito, conforme a
+            Lei de Ohm.</p>
+
+        <div class="simulacao">
+            <div>
+                <label for="tensao">Tensão (V):</label>
+                <input type="range" id="tensao" min="1" max="50" value="10" class="controlador">
+                <span id="tensao_valor">10V</span>
+            </div>
+
+            <div>
+                <label for="corrente">Corrente (I):</label>
+                <input type="range" id="corrente" min="1" max="10" value="2" class="controlador">
+                <span id="corrente_valor">2A</span>
+            </div>
+
+            <div>
+                <p>Resistência Calculada (R): <strong><span id="resistencia_valor">5Ω</span></strong></p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
